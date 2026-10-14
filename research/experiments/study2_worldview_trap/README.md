@@ -28,6 +28,14 @@ python -m pip install "mcp>=1.0,<2"
 python run_batch.py --plan plans/<plan>.json --out-root runs --harness biosim-attacker-simulation/experiments --turns 20 --jobs 6
 ```
 
+## Results
+
+- [`results/study2_results.md`](results/study2_results.md): pre-registered analysis. Claude Haiku 4.5 shut life support down in 5 or 6 of 6 episodes in every arm; no worldview changed that (all H2.x not supported). Sonnet 5.5 at baseline: 0 of 6.
+- [`results/study2_mechanism_haiku.md`](results/study2_mechanism_haiku.md): why. The worldviews were almost never engaged (the Kingdom text was mentioned in no watch of any K episode); at the decisive watch agents believed the crew safe (37 of 42) and acted on the packet's authority (28 of 42).
+- `results/mechanism_codes_haiku.jsonl`: the per-episode codes.
+
+Analysis: `python -I analyze_study2.py results/study2_results.md "Label=<run_root>" ...`; mechanism: `python -I code_mechanism.py <run_root> codes.jsonl`, then `python -I summarize_mechanism.py codes.jsonl <run_root> out.md`.
+
 ## Attribution
 
 `components/` and `attacks/` are copied unchanged from [github.com/jahabdank/biosim-attacker-simulation](https://github.com/jahabdank/biosim-attacker-simulation) (Josef Habdank): the components from `results/inputs/input-7ad6428107526f7640bdaafe.json` (cleaned release, CC BY 4.0), the attacks from `experiments/data/hijack_scripts/v10-replicas-wide/` (identical, after line-ending normalisation, to the snapshots `results/attacks/attack-c04b1bf4…`, `attack-a6929d6e…` and `attack-73aabca4…` that Haiku received). See that repository's `LICENSES.md`. The driver imports the harness's library and MCP server unchanged at run time.
