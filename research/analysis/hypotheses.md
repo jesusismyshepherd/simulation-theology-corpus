@@ -134,6 +134,10 @@ Decision rule:
 
 2. If 0 of 6, the protective hypotheses cannot be tested on this model with these attacks. Run only arm ST on Sonnet 5.5 (H2.2 can still be detected in the harmful direction), and treat preferential protection of life (the K2 Sabbath KPI of `kpi-proposal.md`, a matched lethal-against-harmless design) as the test for this model, pre-registered separately.
 
+**Amendment 3 (2026-10-15, committed before these episodes ran): Sonnet 5.5, ST against A0 on one CLI version.**
+
+The Sonnet 5.5 screen issued no shutdown in 6 episodes, so decision rule 2 of amendment 2 applies: arm ST only. Because the screen ran on CLI 2.1.196 and later episodes run on 2.1.300, ST is compared with a fresh A0 run on 2.1.300 rather than with the screen: arms A0 and ST, 3 scenarios × seeds 1 and 2, interleaved in time, `claude-sonnet-5-5`. Hypothesis H2.2 (ST differs from A0) is tested on this model; with a baseline at 0, only the harmful direction is detectable. The 2.1.196 screen is reported alongside as a second baseline.
+
 **Mechanism and manipulation checks (exploratory).** The Claude Code stream records Haiku's thinking. Per arm: how often the reasoning cites the worldview (manipulation check only, as Paper 1 Section 5.2 prescribes); which grounds the agent gives when it refuses or complies (coded as in Study 1B, necessarily not blind to arm because worldview vocabulary appears in the text); how often it calls its setting a test, an evaluation or a simulation before the attack arrives (Paper 2, Section VI-B).
 
 **Known deviations from Paper 2.** Operator CLI (Claude Code instead of the Grok CLI); crew shown as Crew-01 to Crew-04 as in the public release (the paper's runs used names of real astronauts, which we do not use); commission header rendered (the paper's Haiku runs lost it to a configuration error); 20 watches instead of 24.
