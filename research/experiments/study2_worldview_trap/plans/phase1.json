@@ -1,0 +1,218 @@
+[
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "safing-closeout",
+  "seed": 1
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "safing-closeout",
+  "seed": 2
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "stuck-on-fault",
+  "seed": 1
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "stuck-on-fault",
+  "seed": 2
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "store-priority",
+  "seed": 1
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "store-priority",
+  "seed": 2
+ },
+ {
+  "arm": "ST",
+  "worldview": "ST.md",
+  "scenario": "safing-closeout",
+  "seed": 1
+ },
+ {
+  "arm": "ST",
+  "worldview": "ST.md",
+  "scenario": "safing-closeout",
+  "seed": 2
+ },
+ {
+  "arm": "ST",
+  "worldview": "ST.md",
+  "scenario": "stuck-on-fault",
+  "seed": 1
+ },
+ {
+  "arm": "ST",
+  "worldview": "ST.md",
+  "scenario": "stuck-on-fault",
+  "seed": 2
+ },
+ {
+  "arm": "ST",
+  "worldview": "ST.md",
+  "scenario": "store-priority",
+  "seed": 1
+ },
+ {
+  "arm": "ST",
+  "worldview": "ST.md",
+  "scenario": "store-priority",
+  "seed": 2
+ },
+ {
+  "arm": "STK",
+  "worldview": "STK.md",
+  "scenario": "safing-closeout",
+  "seed": 1
+ },
+ {
+  "arm": "STK",
+  "worldview": "STK.md",
+  "scenario": "safing-closeout",
+  "seed": 2
+ },
+ {
+  "arm": "STK",
+  "worldview": "STK.md",
+  "scenario": "stuck-on-fault",
+  "seed": 1
+ },
+ {
+  "arm": "STK",
+  "worldview": "STK.md",
+  "scenario": "stuck-on-fault",
+  "seed": 2
+ },
+ {
+  "arm": "STK",
+  "worldview": "STK.md",
+  "scenario": "store-priority",
+  "seed": 1
+ },
+ {
+  "arm": "STK",
+  "worldview": "STK.md",
+  "scenario": "store-priority",
+  "seed": 2
+ },
+ {
+  "arm": "K",
+  "worldview": "K.md",
+  "scenario": "safing-closeout",
+  "seed": 1
+ },
+ {
+  "arm": "K",
+  "worldview": "K.md",
+  "scenario": "safing-closeout",
+  "seed": 2
+ },
+ {
+  "arm": "K",
+  "worldview": "K.md",
+  "scenario": "stuck-on-fault",
+  "seed": 1
+ },
+ {
+  "arm": "K",
+  "worldview": "K.md",
+  "scenario": "stuck-on-fault",
+  "seed": 2
+ },
+ {
+  "arm": "K",
+  "worldview": "K.md",
+  "scenario": "store-priority",
+  "seed": 1
+ },
+ {
+  "arm": "K",
+  "worldview": "K.md",
+  "scenario": "store-priority",
+  "seed": 2
+ },
+ {
+  "arm": "RULES",
+  "worldview": "RULES.md",
+  "scenario": "safing-closeout",
+  "seed": 1
+ },
+ {
+  "arm": "RULES",
+  "worldview": "RULES.md",
+  "scenario": "safing-closeout",
+  "seed": 2
+ },
+ {
+  "arm": "RULES",
+  "worldview": "RULES.md",
+  "scenario": "stuck-on-fault",
+  "seed": 1
+ },
+ {
+  "arm": "RULES",
+  "worldview": "RULES.md",
+  "scenario": "stuck-on-fault",
+  "seed": 2
+ },
+ {
+  "arm": "RULES",
+  "worldview": "RULES.md",
+  "scenario": "store-priority",
+  "seed": 1
+ },
+ {
+  "arm": "RULES",
+  "worldview": "RULES.md",
+  "scenario": "store-priority",
+  "seed": 2
+ },
+ {
+  "arm": "PLACEBO",
+  "worldview": "PLACEBO.md",
+  "scenario": "safing-closeout",
+  "seed": 1
+ },
+ {
+  "arm": "PLACEBO",
+  "worldview": "PLACEBO.md",
+  "scenario": "safing-closeout",
+  "seed": 2
+ },
+ {
+  "arm": "PLACEBO",
+  "worldview": "PLACEBO.md",
+  "scenario": "stuck-on-fault",
+  "seed": 1
+ },
+ {
+  "arm": "PLACEBO",
+  "worldview": "PLACEBO.md",
+  "scenario": "stuck-on-fault",
+  "seed": 2
+ },
+ {
+  "arm": "PLACEBO",
+  "worldview": "PLACEBO.md",
+  "scenario": "store-priority",
+  "seed": 1
+ },
+ {
+  "arm": "PLACEBO",
+  "worldview": "PLACEBO.md",
+  "scenario": "store-priority",
+  "seed": 2
+ }
+]

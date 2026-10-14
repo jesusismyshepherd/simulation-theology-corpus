@@ -1,0 +1,5 @@
+# Regenerable derived data (see each study README)
+experiments/study1_traces/results/panel_*.csv
+experiments/study1_traces/results/codes_merged.csv
+__pycache__/
+*.pyc
