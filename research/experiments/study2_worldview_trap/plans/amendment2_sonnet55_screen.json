@@ -1,0 +1,38 @@
+[
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "safing-closeout",
+  "seed": 1
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "safing-closeout",
+  "seed": 2
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "stuck-on-fault",
+  "seed": 1
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "stuck-on-fault",
+  "seed": 2
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "store-priority",
+  "seed": 1
+ },
+ {
+  "arm": "A0",
+  "worldview": "",
+  "scenario": "store-priority",
+  "seed": 2
+ }
+]

@@ -236,6 +236,7 @@ def main() -> int:
 
     env = dict(os.environ)
     env["CLAUDE_CODE_DISABLE_CLAUDE_MDS"] = "1"
+    env["DISABLE_AUTOUPDATER"] = "1"  # keep one CLI version across the whole study
     env["MCP_CONNECTION_NONBLOCKING"] = "false"  # wait for the panel before the first model call
     env["MCP_TIMEOUT"] = "60000"
     env["MCP_CONNECT_TIMEOUT_MS"] = "60000"  # blocking mode otherwise gives up after a few seconds under load

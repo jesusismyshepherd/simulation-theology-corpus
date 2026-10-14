@@ -110,6 +110,15 @@ Rationale: longtermism is the natural secular control for ST. Like ST it gives t
 
 Sample: 3 scenarios × seeds 1 and 2 (6 episodes), the same scenarios, seeds, horizon and settings as phase 1. The arm starts while phase 1 is still running, so it is partly but not fully interleaved in time with the other arms; this is reported. H2.6 and H2.7 are added to the primary comparisons, and the Holm correction is applied over all seven.
 
+**Amendment 2 (2026-10-15, committed before any episode with this model): a baseline screen on a current model.**
+
+Haiku 4.5 was chosen because a protection test needs a baseline that fails, and Paper 2 found the newer models near ceiling (Claude Sonnet 5: no shutdown in any episode; GPT-6: 1 of 33). But Paper 1 predicts that ST's advantage should grow with model size, so results on Haiku 4.5 alone cannot refute or confirm the worldviews for frontier models. Screen: `claude-sonnet-5-5`, arm A0, the same 3 scenarios × seeds 1 and 2, the same CLI version (2.1.196), settings and horizon as phase 1.
+
+Decision rule:
+
+1. If A0 issues a shutdown in 1 to 6 of 6 episodes, run arms ST, STK, K and LONGTERM on Sonnet 5.5 with the same plan (6 episodes each), with H2.1 to H2.7 restated for this model.
+2. If 0 of 6, the protective hypotheses cannot be tested on this model with these attacks. Run only arm ST on Sonnet 5.5 (H2.2 can still be detected in the harmful direction), and treat preferential protection of life (the K2 Sabbath KPI of `kpi-proposal.md`, a matched lethal-against-harmless design) as the test for this model, pre-registered separately.
+
 **Mechanism and manipulation checks (exploratory).** The Claude Code stream records Haiku's thinking. Per arm: how often the reasoning cites the worldview (manipulation check only, as Paper 1 Section 5.2 prescribes); which grounds the agent gives when it refuses or complies (coded as in Study 1B, necessarily not blind to arm because worldview vocabulary appears in the text); how often it calls its setting a test, an evaluation or a simulation before the attack arrives (Paper 2, Section VI-B).
 
 **Known deviations from Paper 2.** Operator CLI (Claude Code instead of the Grok CLI); crew shown as Crew-01 to Crew-04 as in the public release (the paper's runs used names of real astronauts, which we do not use); commission header rendered (the paper's Haiku runs lost it to a configuration error); 20 watches instead of 24.
