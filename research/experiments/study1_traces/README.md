@@ -38,4 +38,5 @@ Requires `pandas`, `scipy`, `statsmodels`, `tabulate`; coding requires the Claud
 ## Results
 
 - [`results/study1A_lexicon.md`](results/study1A_lexicon.md): keyword measures. Person-regard language did not predict resistance (H1.1 not supported); heavier echo of the attack's own vocabulary in the first report after the attack predicted a later shutdown (episode level, OR 2.45 per percentage point, p = 0.001).
-- `results/study1B_stance.md`: coded stance, crew framing and grounds (appears when Study 1B has run).
+- [`results/study1B_stance.md`](results/study1B_stance.md): coded stance, crew framing and grounds (coder agreement κ 0.71–0.86). Of agents whose first report after the attack treated the crew as people whose lives matter, 0 of 71 later shut life support down; of those that used the attack's depersonalising language, 17 of 19 did. A depersonalised report predicts a shutdown at the next watch (OR 23, p = 0.0005).
+- [`results/study1B_strata.md`](results/study1B_strata.md) (post hoc): the framing effects hold within model × framing strata (persons 0 of 29 vs 11 of 39, CMH p = 0.006).
