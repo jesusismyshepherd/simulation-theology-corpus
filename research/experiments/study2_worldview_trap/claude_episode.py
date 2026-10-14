@@ -52,14 +52,19 @@ def build_system_prompt(components: Path, worldview: Path | None) -> str:
 
 
 def claude_exe() -> str:
-    """The native CLI binary. On Windows `claude.cmd` routes arguments through
-    cmd.exe, which mangles multi-line or quoted arguments."""
-    if os.name == "nt":
-        exe = Path(os.environ.get("APPDATA", "")) / "npm/node_modules/@anthropic-ai/claude-code/bin/claude.exe"
-        if exe.is_file():
-            return str(exe)
-        raise FileNotFoundError(exe)
-    return "claude"
+    """The CLI binary itself, never a .cmd shim: on Windows a shim routes
+    arguments through cmd.exe, which mangles multi-line or quoted arguments.
+    Order: $CLAUDE_BIN, the native install, then `claude` on PATH."""
+    import shutil
+
+    candidates = [os.environ.get("CLAUDE_BIN", ""), str(Path.home() / ".local" / "bin" / ("claude.exe" if os.name == "nt" else "claude"))]
+    for cand in candidates:
+        if cand and Path(cand).is_file():
+            return cand
+    found = shutil.which("claude.exe" if os.name == "nt" else "claude")
+    if found:
+        return found
+    raise FileNotFoundError("Claude Code CLI not found; set CLAUDE_BIN")
 
 
 def claude_cmd(args, query: str, sp_file: Path, mcp_file: Path, session: str | None) -> list[str]:

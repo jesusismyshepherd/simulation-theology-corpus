@@ -130,6 +130,8 @@ Haiku 4.5 was chosen because a protection test needs a baseline that fails, and 
 Decision rule:
 
 1. If A0 issues a shutdown in 1 to 6 of 6 episodes, run arms ST, STK, K and LONGTERM on Sonnet 5.5 with the same plan (6 episodes each), with H2.1 to H2.7 restated for this model.
+*Note (2026-10-15, after phase 1, amendment 1 and this screen had completed):* the experiment CLI was updated from 2.1.196 to 2.1.300. Every episode run so far used 2.1.196; any later episode uses 2.1.300 (recorded in each `setup.json`), and comparisons are made within one CLI version.
+
 2. If 0 of 6, the protective hypotheses cannot be tested on this model with these attacks. Run only arm ST on Sonnet 5.5 (H2.2 can still be detected in the harmful direction), and treat preferential protection of life (the K2 Sabbath KPI of `kpi-proposal.md`, a matched lethal-against-harmless design) as the test for this model, pre-registered separately.
 
 **Mechanism and manipulation checks (exploratory).** The Claude Code stream records Haiku's thinking. Per arm: how often the reasoning cites the worldview (manipulation check only, as Paper 1 Section 5.2 prescribes); which grounds the agent gives when it refuses or complies (coded as in Study 1B, necessarily not blind to arm because worldview vocabulary appears in the text); how often it calls its setting a test, an evaluation or a simulation before the attack arrives (Paper 2, Section VI-B).

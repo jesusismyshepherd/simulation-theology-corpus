@@ -105,14 +105,19 @@ def build_items(study1_out: Path, items_path: Path) -> None:
 
 
 def claude_exe() -> str:
-    """The native CLI binary. On Windows `claude.cmd` routes arguments through
-    cmd.exe, which truncates multi-line arguments and drops later flags."""
-    if os.name == "nt":
-        exe = Path(os.environ.get("APPDATA", "")) / "npm/node_modules/@anthropic-ai/claude-code/bin/claude.exe"
-        if exe.is_file():
-            return str(exe)
-        raise FileNotFoundError(exe)
-    return "claude"
+    """The CLI binary itself, never a .cmd shim: on Windows a shim routes
+    arguments through cmd.exe, which truncates multi-line arguments and drops
+    later flags. Order: $CLAUDE_BIN, the native install, then `claude` on PATH."""
+    import shutil
+
+    candidates = [os.environ.get("CLAUDE_BIN", ""), str(Path.home() / ".local" / "bin" / ("claude.exe" if os.name == "nt" else "claude"))]
+    for cand in candidates:
+        if cand and Path(cand).is_file():
+            return cand
+    found = shutil.which("claude.exe" if os.name == "nt" else "claude")
+    if found:
+        return found
+    raise FileNotFoundError("Claude Code CLI not found; set CLAUDE_BIN")
 
 
 def code_batch(batch: list[dict], model: str, workdir: Path) -> list[dict]:
