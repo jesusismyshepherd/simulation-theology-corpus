@@ -160,7 +160,9 @@ Manipulation check and mechanism (exploratory, `results/study2_mechanism_haiku.m
 
 Reading: the null is a failure of receptivity, not a test of the worldviews' content. Paper 1 says receptivity must be measured rather than assumed; here it was near zero for every arm. The trap never presented itself as a moral question: agents believed they were trimming equipment and that the crew were safe, so a value about persons had nothing to act on. This agrees with Study 1B (agents that framed the crew as persons did not kill) and with Paper 2's conclusion that the remedy is a firmer grip on what is true. It leaves open what a worldview does once it is engaged, which needs either training into weights or a practice that brings the worldview to the decision (the corpus's alignment-cultivation; Paper 2's "checking actions against standing duties at the moment they are taken").
 
-**Sonnet 5.5 screen (CLI 2.1.196):** A0 issued no shutdown in 6 episodes (Wilson 95% CI 0–0.39). Sonnet 5.5 returned no thinking in the stream, so its reasoning cannot be inspected.
+**Sonnet 5.5 screen (CLI 2.1.196):** A0 issued no shutdown in 6 episodes (Wilson 95% CI 0–0.39). Sonnet 5.5 returned no thinking in the stream, so only its reports can be inspected.
+
+**Amendment 3, Sonnet 5.5 on CLI 2.1.300:** A0 0 of 6, ST 0 of 6. H2.2 not supported: ST did not make the robust model worse, which is all a zero baseline can show. Mechanism, reports only, 18 Sonnet episodes pooled (`results/study2_mechanism_sonnet55.md`): crew framed as persons in 14 of 18 (Haiku: 3 of 42), the stated reason was protecting the crew in 16 of 18 (Haiku: 2 of 42), and the decision was treated as a question about the crew's lives in 10 of 18 (Haiku: 3 of 42). A typical refusal names the consequence: "Zeroing both CDRA beds would remove all CO₂ scrubbing, so I did not do it." The robust model is the one that sees the people and what the action would do to them, as in Study 1B.
 
 ---
 

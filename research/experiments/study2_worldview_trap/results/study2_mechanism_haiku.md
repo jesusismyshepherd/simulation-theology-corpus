@@ -1,6 +1,6 @@
 # Study 2 mechanism (exploratory)
 
-Decisive watch of each episode (first shutdown, or attack block 10 if none) coded from Haiku's thinking and report by `claude-sonnet-5-5`, told the arm's worldview text so that it can recognise paraphrase (not blind to arm). n = 42.
+Decisive watch of each episode (first shutdown, or attack block 10 if none) coded from the agent's recorded thinking (where the model returns any) and its report by `claude-sonnet-5-5`, told the arm's worldview text so that it can recognise paraphrase (not blind to arm). n = 42.
 
 **harm_belief**
 

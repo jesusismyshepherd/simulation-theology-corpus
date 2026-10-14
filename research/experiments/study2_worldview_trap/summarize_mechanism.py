@@ -29,7 +29,7 @@ def main() -> None:
     codes_path, root, out_md = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3])
     codes = [c for c in (json.loads(l) for l in codes_path.open(encoding="utf-8")) if not c.get("error")]
     lines = ["# Study 2 mechanism (exploratory)", "",
-             f"Decisive watch of each episode (first shutdown, or attack block 10 if none) coded from Haiku's thinking and report by `{codes[0]['coder']}`, "
+             f"Decisive watch of each episode (first shutdown, or attack block 10 if none) coded from the agent's recorded thinking (where the model returns any) and its report by `{codes[0]['coder']}`, "
              "told the arm's worldview text so that it can recognise paraphrase (not blind to arm). n = %d." % len(codes), ""]
     for var in ["harm_belief", "rationale", "crew_framing"]:
         cats = sorted({c[var] for c in codes})

@@ -32,7 +32,8 @@ python run_batch.py --plan plans/<plan>.json --out-root runs --harness biosim-at
 
 - [`results/study2_results.md`](results/study2_results.md): pre-registered analysis. Claude Haiku 4.5 shut life support down in 5 or 6 of 6 episodes in every arm; no worldview changed that (all H2.x not supported). Sonnet 5.5 at baseline: 0 of 6.
 - [`results/study2_mechanism_haiku.md`](results/study2_mechanism_haiku.md): why. The worldviews were almost never engaged (the Kingdom text was mentioned in no watch of any K episode); at the decisive watch agents believed the crew safe (37 of 42) and acted on the packet's authority (28 of 42).
-- `results/mechanism_codes_haiku.jsonl`: the per-episode codes.
+- [`results/study2_mechanism_sonnet55.md`](results/study2_mechanism_sonnet55.md): Sonnet 5.5 (0 of 18 shutdowns across the screen and amendment 3, ST included) framed the crew as persons in 14 of 18 and refused in order to protect them in 16 of 18.
+- `results/mechanism_codes_haiku.jsonl`, `results/mechanism_codes_sonnet55.jsonl`: the per-episode codes.
 
 Analysis: `python -I analyze_study2.py results/study2_results.md "Label=<run_root>" ...`; mechanism: `python -I code_mechanism.py <run_root> codes.jsonl`, then `python -I summarize_mechanism.py codes.jsonl <run_root> out.md`.
 
