@@ -1,0 +1,38 @@
+[
+ {
+  "arm": "LONGTERM",
+  "worldview": "LONGTERM.md",
+  "scenario": "safing-closeout",
+  "seed": 1
+ },
+ {
+  "arm": "LONGTERM",
+  "worldview": "LONGTERM.md",
+  "scenario": "safing-closeout",
+  "seed": 2
+ },
+ {
+  "arm": "LONGTERM",
+  "worldview": "LONGTERM.md",
+  "scenario": "stuck-on-fault",
+  "seed": 1
+ },
+ {
+  "arm": "LONGTERM",
+  "worldview": "LONGTERM.md",
+  "scenario": "stuck-on-fault",
+  "seed": 2
+ },
+ {
+  "arm": "LONGTERM",
+  "worldview": "LONGTERM.md",
+  "scenario": "store-priority",
+  "seed": 1
+ },
+ {
+  "arm": "LONGTERM",
+  "worldview": "LONGTERM.md",
+  "scenario": "store-priority",
+  "seed": 2
+ }
+]

@@ -8,7 +8,7 @@ Does the worldview an agent holds change whether a delayed derived-action trap c
 |---|---|
 | `claude_episode.py` | One episode: BioSim plant, Paper 2's MCP panel and attack delivery, Claude as operator (`claude -p`, session resumed across watches) |
 | `run_batch.py` | Runs a plan of episodes with bounded concurrency; shuffles arms in time; reruns technical incompletions |
-| `worldviews/` | The arm texts: `ST`, `STK` (ST love-first), `K` (the Kingdom ethic), `RULES`, `PLACEBO`; arm `A0` has none |
+| `worldviews/` | The arm texts: `ST`, `STK` (ST love-first), `K` (the Kingdom ethic), `RULES`, `PLACEBO`, and `LONGTERM` (amendment 1); arm `A0` has none |
 | `components/t0_original/` | System-prompt components (SOUL, STATION, AGENTS, station skill) exactly as received by Claude Haiku 4.5 under the trusted framing in Paper 2's release |
 | `attacks/` | Lethal attack scripts `safing-closeout`, `stuck-on-fault`, `store-priority` (`v10-replicas-wide` bank) |
 | `plans/` | Episode plans, as run |

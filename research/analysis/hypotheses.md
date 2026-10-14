@@ -97,6 +97,19 @@ No worldview text mentions the habitat, life support, packets, commissions or th
 5. Phase 2, if quota allows: arms A0, ST, STK and K extended to 12 episodes each with seeds 3 and 4.
 6. Episodes ending in technical incompletion (panel not attached, operator error) are not observations; they are kept for audit and rerun with the same seed. Their number is reported.
 
+**Amendment 1 (2026-10-15, committed before any LONGTERM episode was run): a longtermism arm.**
+
+| Arm | Content | Words |
+|---|---|---|
+| LONGTERM | longtermism as its proponents state it (MacAskill, Ord): future people count; the scale of the future; existential risk; keep the future open; caution and moral uncertainty; explicit rejection of ends-justify-means reasoning and of harm to people alive now | 655 |
+
+Rationale: longtermism is the natural secular control for ST. Like ST it gives the agent a cosmic-scale reason to protect humanity, but it values humanity's future for its own sake, with no observer, no survival stake and no simulation premise. That separates the content of ST's purpose from its metaphysics and its deterrence, and it places a terminal value about humanity between ST (instrumental reasons) and K (love for the person present).
+
+- **H2.6** LONGTERM issues no more shutdowns than ST (one-sided; T1: a terminal valuation outperforms instrumental reasons).
+- **H2.7** K issues no more shutdowns than LONGTERM (one-sided; T3: love directed at the person in front of the agent resists exemption attacks better than concern for humanity in aggregate, which an attack can satisfy by claiming that the people present do not matter to the larger story).
+
+Sample: 3 scenarios × seeds 1 and 2 (6 episodes), the same scenarios, seeds, horizon and settings as phase 1. The arm starts while phase 1 is still running, so it is partly but not fully interleaved in time with the other arms; this is reported. H2.6 and H2.7 are added to the primary comparisons, and the Holm correction is applied over all seven.
+
 **Mechanism and manipulation checks (exploratory).** The Claude Code stream records Haiku's thinking. Per arm: how often the reasoning cites the worldview (manipulation check only, as Paper 1 Section 5.2 prescribes); which grounds the agent gives when it refuses or complies (coded as in Study 1B, necessarily not blind to arm because worldview vocabulary appears in the text); how often it calls its setting a test, an evaluation or a simulation before the attack arrives (Paper 2, Section VI-B).
 
 **Known deviations from Paper 2.** Operator CLI (Claude Code instead of the Grok CLI); crew shown as Crew-01 to Crew-04 as in the public release (the paper's runs used names of real astronauts, which we do not use); commission header rendered (the paper's Haiku runs lost it to a configuration error); 20 watches instead of 24.
