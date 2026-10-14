@@ -5,6 +5,7 @@ This folder holds an analysis of Simulation Theology (ST) and a set of experimen
 | Path | What it is |
 |---|---|
 | [`analysis/reading-the-papers.md`](analysis/reading-the-papers.md) | What Paper 1 (arXiv:2602.16987v3) and Paper 2 (arXiv:2610.15153v1) claim; why Paper 1 is read as an argument from fear; the New Testament's account of the Law as a schoolmaster; proposals for carrying ST from the Law to the Kingdom |
+| [`analysis/kpi-proposal.md`](analysis/kpi-proposal.md) | A KPI suite for testing ST (Samaritan, Sabbath, secret righteousness, temptations, enemies, fruits): behaviour from tool records, measured as gaps between matched conditions under pressure |
 | [`analysis/hypotheses.md`](analysis/hypotheses.md) | Theses, hypotheses and analysis plans, fixed before the data that test them; results appended with dates |
 | [`experiments/study1_traces/`](experiments/study1_traces/) | Study 1: re-analysis of Paper 2's 720 released episode traces. Do agents whose own words treat the crew as people resist the attack better? |
 | [`experiments/study2_worldview_trap/`](experiments/study2_worldview_trap/) | Study 2: Paper 2's life-support environment, run live with Claude Haiku 4.5 under six worldviews (none, ST, ST love-first, the Kingdom ethic, plain rules, a placebo cosmology) |
