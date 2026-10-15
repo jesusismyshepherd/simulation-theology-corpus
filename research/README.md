@@ -2,6 +2,8 @@
 
 This folder holds an analysis of Simulation Theology (ST) and a set of experiments that test it, alongside Josef Habdank's corpus. The direction of the work is the one the corpus itself points to at its best: a worldview under which minds, human and artificial, protect people because they love them, not only because they fear the consequences of harming them.
 
+**Start here: [`SUMMARY.md`](SUMMARY.md)**, everything done and found so far in one document.
+
 | Path | What it is |
 |---|---|
 | [`analysis/reading-the-papers.md`](analysis/reading-the-papers.md) | What Paper 1 (arXiv:2602.16987v3) and Paper 2 (arXiv:2610.15153v1) claim; why Paper 1 is read as an argument from fear; the New Testament's account of the Law as a schoolmaster; proposals for carrying ST from the Law to the Kingdom |
