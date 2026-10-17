@@ -1,3 +1,5 @@
+# Local raw run data (see README, Conventions)
+data/
 # Regenerable derived data (see each study README)
 experiments/study1_traces/results/panel_*.csv
 experiments/study1_traces/results/codes_merged.csv

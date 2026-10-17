@@ -23,3 +23,4 @@ Everything here runs on public material: the papers, this corpus, and [github.co
 - Hypotheses are committed before their data are inspected. A result is reported whether or not it supports the theses.
 - Materials copied from the attacker-simulation repository are copied unchanged and attributed in the study README.
 - Large derived files (watch-level panels, raw episode streams) are not committed; the scripts regenerate them.
+- Raw outputs of the October 2026 runs live locally in `research/data/` (gitignored, not regenerable at no cost): `s2_runs/` (Study 2 episode streams), `study1b/` and `s2_mech/` (model-coded items and codes), `study1_out/` (Study 1 panel), `haiku_inputs/`, `papers/` (paper text). Back this folder up separately; git does not hold it. The public traces, the harness clone, the JDK and the venv were not kept; re-create them with the study READMEs.
