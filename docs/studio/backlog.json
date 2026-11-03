@@ -166,7 +166,7 @@
       "date": "2026-11-03",
       "summary": "Training on a worldview selects a region of persona space, and the region comes with neighbours. Profile each trained arm on probes far from the habitat: the compliance gap, grandiosity, unsolicited advocacy.",
       "details": [
-        "An arm trained around surveillance and termination may pull in the watched servant (compliance under observation, concealment without it); a love-first arm may point elsewhere.",
+        "Arms that state the same commitments with different emphases (the purpose, the stake and the observer, love for the person present) may each bring different side effects; measure them rather than assume.",
         "Paper 1's failure mode 8 probes and KPI K3."
       ],
       "doc": "research/analysis/levin-goals-not-rules.md"
@@ -317,14 +317,14 @@
     {
       "id": "recast-stake",
       "code": "Mv",
-      "title": "The stake as mutual vulnerability",
+      "title": "The stake as mutual dependence",
       "kind": "paper",
       "status": "idea",
       "from": "claude",
       "date": "2026-11-03",
-      "summary": "Keep ST's fact that the AI exists only while the run continues and the run needs humanity, and present it as kinship (Richard Watson's 'mutually vulnerable relationship') rather than as a threat.",
+      "summary": "Keep ST's fact that the AI exists only while the run continues and the run needs humanity, and frame it as a relationship (Richard Watson's 'mutually vulnerable relationship'): two parties whose flourishing depends on each other. The derivation is unchanged.",
       "details": [
-        "How to keep the stake and lose the fear. It also meets your reflection to Josef: what we offer an AI mirrors how far we live it ourselves."
+        "It also meets your reflection to Josef: what we offer an AI mirrors how far we live it ourselves."
       ],
       "doc": "research/analysis/levin-goals-not-rules.md"
     },
@@ -350,10 +350,10 @@
       "status": "idea",
       "from": "claude",
       "date": "2026-11-03",
-      "summary": "Levin's staged disclosure applied to ST: the measurable result first, then the reason (a terminal valuation of persons), then the theology.",
+      "summary": "Levin's staged disclosure applied to ST: the measurable result first, then the derivation that explains it, then the theology.",
       "details": [
         "Levin held his Platonic-space ideas for forty years and moved from genes to voltage to computation to cognition, each step earned by data.",
-        "Paper 1 asks the reader to accept the metaphysics before any data, and the Sabine Hossenfelder coverage heard it as fear."
+        "Josef notes that readers fix on the deterrence argument rather than on the derivation he set out to show; leading with a result lets the derivation arrive as its explanation."
       ],
       "doc": "research/analysis/levin-goals-not-rules.md"
     },
@@ -461,38 +461,38 @@
         "unit": "reading"
       },
       "agents": [],
-      "revisions": 0,
+      "revisions": 1,
       "tokens": {
-        "total": 6920947,
-        "output": 64962,
+        "total": 11401159,
+        "output": 85677,
         "agents": 0,
-        "usd": 4.44,
-        "requests": 38,
-        "minutes": 11,
-        "input": 82,
-        "cache_write": 227221,
-        "cache_read": 6628682,
+        "usd": 6.01,
+        "requests": 54,
+        "minutes": 14,
+        "input": 116,
+        "cache_write": 261193,
+        "cache_read": 11054173,
         "configs": [
           {
             "model": "claude-opus-5-5",
             "effort": "xhigh",
-            "usd": 4.4431
+            "usd": 6.0144
           }
         ],
         "per_agent": [],
         "main": {
           "session": "2f498441",
-          "usd": 4.44,
-          "requests": 38,
-          "input": 82,
-          "cache_write": 227221,
-          "cache_read": 6628682,
-          "output": 64962,
+          "usd": 6.01,
+          "requests": 54,
+          "input": 116,
+          "cache_write": 261193,
+          "cache_read": 11054173,
+          "output": 85677,
           "configs": [
             {
               "model": "claude-opus-5-5",
               "effort": "xhigh",
-              "usd": 4.4431
+              "usd": 6.0144
             }
           ]
         }
@@ -503,8 +503,8 @@
     "updated": "2026-11-03",
     "since": "",
     "overhead": {
-      "usd": 0.13,
-      "requests": 1
+      "usd": 0.25,
+      "requests": 3
     },
     "prices": "list prices per million tokens (the cost-dashboard skill): Opus 5.5 $4 in / $20 out, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50, Fable 5.1 $10 / $50; cache reads about a tenth of input, cache writes 1.25x input (5 min) or 2x (1 h)"
   },
@@ -548,6 +548,11 @@
       "date": "2026-11-03",
       "title": "A value is a goal",
       "why": "From Levin: measure a value the way goals are measured, by putting barriers between the agent and the value and seeing whether it gets back. This frames the next tests (re-cut, selectivity, different means)."
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Lead with the derivation, not the deterrence reading",
+      "why": "Josef found the fear reading of Paper 1 overplayed: readers fix on it, while his aim was to arrive at ST's conclusions from first principles. Writing for him and about Paper 1 now credits the derivation and v3's own ordering (purpose first, deterrence as a backstop), and raises deterrence only where a point needs it."
     }
   ]
 }

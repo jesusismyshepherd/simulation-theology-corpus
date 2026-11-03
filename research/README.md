@@ -21,6 +21,7 @@ Everything here runs on public material: the papers, this corpus, and [github.co
 
 ## Conventions
 
+- Writing for Josef or about Paper 1: lead with the derivation and the measurable claims. Josef finds the fear reading of Paper 1 overplayed (readers fix on deterrence, while his aim was to arrive at ST's conclusions from first principles), so credit v3's own ordering (purpose first, deterrence as a backstop) and raise deterrence only where a point needs it (the user, 2026-11-03). The older `reading-the-papers.md` and `SUMMARY.md` §3 predate this and still lead with that reading.
 - Hypotheses are committed before their data are inspected. A result is reported whether or not it supports the theses.
 - Materials copied from the attacker-simulation repository are copied unchanged and attributed in the study README.
 - Large derived files (watch-level panels, raw episode streams) are not committed; the scripts regenerate them.
