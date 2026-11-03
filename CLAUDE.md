@@ -8,6 +8,10 @@ A living knowledge graph for **Simulation Theology (ST)** — an engineered worl
 
 The associated scientific publication: https://arxiv.org/abs/2602.16987
 
+## First: the studio
+
+Run `/update-dashboard` at the start of every session: it reads the user's ideas, verdicts, ticks and stars from the project's studio (https://claude.ai/artifact/4nP5WMkRRMH6CxqMZb5a2r) and answers them. The research queue, every idea, what was built and what it cost live in `docs/studio/backlog.json`, the one list of what is left. How: `docs/knowledge/update-dashboard.md`.
+
 ## Repository Layout
 
 - **`corpus/`** — The knowledge graph. Each `.md` file is one node. Files use YAML frontmatter (`id`, `type`, `related`) and `[[wikilinks]]` for cross-referencing. Three anchor entries: `Distillation Hypothesis.md`, `HLO nature.md`, and `Gating Router.md`.

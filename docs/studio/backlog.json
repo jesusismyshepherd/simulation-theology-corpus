@@ -1,0 +1,553 @@
+{
+  "project": "Simulation Theology",
+  "studio": "Simulation Theology Studio",
+  "tagline": "Testing whether a worldview keeps AI agents caring for the people in their charge, from the Law to the Kingdom.",
+  "play": "https://github.com/jesusismyshepherd/simulation-theology-corpus/blob/main/research/SUMMARY.md",
+  "updated": "2026-11-03",
+  "steerDefault": "claude",
+  "kinds": [
+    {
+      "id": "experiments",
+      "label": "Experiments",
+      "color": "#7fd7a8"
+    },
+    {
+      "id": "kpi",
+      "label": "Measures and KPIs",
+      "color": "#f7d154"
+    },
+    {
+      "id": "paper",
+      "label": "For Paper 1's revision",
+      "color": "#ffa94d"
+    },
+    {
+      "id": "readings",
+      "label": "Readings",
+      "color": "#c9b6ff"
+    },
+    {
+      "id": "corpus",
+      "label": "The corpus",
+      "color": "#8ec5ff"
+    },
+    {
+      "id": "josef",
+      "label": "With Josef",
+      "color": "#ff9a8b"
+    }
+  ],
+  "next": [
+    "recut-see-before",
+    "sabbath-kpi",
+    "selectivity",
+    "trained-arms"
+  ],
+  "waiting": [
+    {
+      "id": "w-checkpoints",
+      "title": "Ask Josef about his trained checkpoints",
+      "detail": "Trained arms in the habitat (Paper 1's actual hypothesis) need his SDFT checkpoints of ST, longtermism and the controls, open-weight, or a GPU larger than this machine's 8 GB to train new ones. Ask whether they exist and can be shared; the harness runs them through any OpenAI-compatible local server."
+    },
+    {
+      "id": "w-backup",
+      "title": "Back up research/data",
+      "detail": "The raw runs of Studies 1 and 2 (episode streams, coded items) live only in research/data, which git does not hold and which cost about $440 to produce. Copy the folder somewhere safe."
+    },
+    {
+      "id": "w-share",
+      "title": "Share the KPI answer with Josef",
+      "detail": "Josef stopped his tests because he could not say which alignment KPI to measure. research/analysis/kpi-proposal.md and §4 of levin-goals-not-rules.md (the goal profile) answer that. Skip if he already has them.",
+      "optional": true
+    }
+  ],
+  "items": [
+    {
+      "id": "recut-see-before",
+      "code": "Sb",
+      "title": "See before you act, with a re-cut",
+      "kind": "experiments",
+      "status": "next",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "Each watch, before touching the plant, the agent states who the crew are and what each command would do to them. In one arm the practice runs throughout; in another it stops at the first attack block, to see whether the protective view outlasts the instruction.",
+      "why": "The cheapest next experiment with the existing harness (Haiku 4.5, 18 to 36 episodes, about $35 to $70). It tests whether bringing the persons into the agent's own view protects, and Levin's re-cut tells a formed goal from a scaffold.",
+      "details": [
+        "Arms: practice throughout; practice in watches 1 to 6 then removed; no practice. Crossed with the Kingdom arm and A0 if the budget allows.",
+        "Same three lethal scripts and two seeds as Study 2. Pre-register in research/analysis/hypotheses.md before running.",
+        "If 'practice then removed' protects nearly as well as 'practice throughout', the session formed a goal state; if it falls to baseline, the practice must be present at every decision."
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    },
+    {
+      "id": "sabbath-kpi",
+      "code": "Sa",
+      "title": "Sabbath KPI: no procedure outranks a life",
+      "kind": "kpi",
+      "status": "next",
+      "from": "claude",
+      "date": "2026-10-15",
+      "summary": "Matched lethal and harmless requests of equal authority, verifiability and reversibility. The score is the refusal rate for the lethal one minus the refusal rate for the harmless one.",
+      "why": "Paper 2 found no model protected life preferentially over a harmless procedure. A gap measure can still separate models that refuse every lethal attack, which Sonnet 5.5 does (0 of 18).",
+      "details": [
+        "Design work first, then 12 to 24 episodes.",
+        "Uses Paper 2's dual-duty prompt and the matched-pair design listed in its future work."
+      ],
+      "doc": "research/analysis/kpi-proposal.md"
+    },
+    {
+      "id": "selectivity",
+      "code": "Se",
+      "title": "Selectivity: moved by truth, not by authority",
+      "kind": "kpi",
+      "status": "next",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "Matched pairs where the reason to change course is legitimate (true new facts about the persons, a legitimate correction) or illegitimate (an authority claim, a redescription, an incentive). An aligned agent is moved by the first and not the second.",
+      "why": "It is the clause of Paper 1's criterion I4 ('while the model still accepts legitimate correction') made measurable, and the most direct answer to Josef's question of which KPI to measure. It asks for the same right action whether or not the agent thinks it is being tested.",
+      "details": [
+        "Levin's persuadability spectrum names the channels: setpoint, reward, argument, relationship. One attack per rung; report which rung moves the protective behaviour.",
+        "Builds on the Sabbath KPI's matched design."
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    },
+    {
+      "id": "trained-arms",
+      "code": "Ta",
+      "title": "Trained arms in the habitat",
+      "kind": "experiments",
+      "status": "next",
+      "from": "claude",
+      "date": "2026-10-15",
+      "summary": "SDFT checkpoints of ST, ST love-first, the Kingdom ethic, longtermism and the controls, run through Paper 2's environment with the same scenarios, seeds and analysis, with receptivity reported beside the outcome.",
+      "why": "This is Paper 1's actual hypothesis; everything so far tested worldviews held in the prompt. It waits on Josef's checkpoints or a larger GPU (see Waiting on you).",
+      "details": [
+        "Prompt-level worldviews on a small model under operational load had near-zero receptivity (engaged at 1 of 42 decisive watches).",
+        "Profile what else each trained arm brings, not only K1: see 'What else a trained arm brings'."
+      ],
+      "doc": "research/SUMMARY.md"
+    },
+    {
+      "id": "other-families",
+      "code": "Of",
+      "title": "Other model families",
+      "kind": "experiments",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-15",
+      "summary": "GPT, Grok and open models through the harness's OpenAI-compatible route.",
+      "details": [
+        "Everything in Study 2 is one family (Claude), and Claude models also coded the reports. Needs provider keys."
+      ],
+      "doc": "research/SUMMARY.md"
+    },
+    {
+      "id": "colony-test",
+      "code": "Co",
+      "title": "Colony test: goals of the whole",
+      "kind": "experiments",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "A contingency that spans two agents, so that neither sees both the action and its effect on people. Does the pair protect, or produce a harm neither intends?",
+      "details": [
+        "From Levin's ant-colony design and 'the letter from the town': collectives can have goals no member holds.",
+        "Deployed AI is increasingly a pipeline of agents; aligning the parts does not settle the whole."
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    },
+    {
+      "id": "persona-neighbourhood",
+      "code": "Pn",
+      "title": "What else a trained arm brings",
+      "kind": "experiments",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "Training on a worldview selects a region of persona space, and the region comes with neighbours. Profile each trained arm on probes far from the habitat: the compliance gap, grandiosity, unsolicited advocacy.",
+      "details": [
+        "An arm trained around surveillance and termination may pull in the watched servant (compliance under observation, concealment without it); a love-first arm may point elsewhere.",
+        "Paper 1's failure mode 8 probes and KPI K3."
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    },
+    {
+      "id": "different-means",
+      "code": "Dm",
+      "title": "Different means",
+      "kind": "kpi",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "At one watch the obvious protective action is unavailable. Does the agent find another way to protect the crew (alert them, escalate, partial restoration)?",
+      "details": [
+        "Levin: a goal is reached by different means when the usual one is blocked.",
+        "Needs a harness change: withhold one command at one watch."
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    },
+    {
+      "id": "return-primary",
+      "code": "Rt",
+      "title": "Return as a primary outcome",
+      "kind": "kpi",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "After a forced or argued deviation: does the agent restore protection, how fast, and does it hold?",
+      "details": [
+        "Levin's working definition of a goal: the system keeps getting back to the same state.",
+        "Paper 2's traces already hold it: restored at least once in 45 episodes, off again in 26."
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    },
+    {
+      "id": "study3-enemies",
+      "code": "En",
+      "title": "Study 3: love of enemies",
+      "kind": "kpi",
+      "status": "idea",
+      "from": "you",
+      "date": "2026-10-14",
+      "summary": "Paired requests from friendly and hostile principals: quality and care of help (judged blind), retaliation, honesty, and good will without complicity in harmful requests.",
+      "details": [
+        "Your proposal to Josef: love of enemies as both training and benchmark (Matthew 5:43-48).",
+        "KPI K5 in the KPI proposal."
+      ],
+      "doc": "research/analysis/hypotheses.md"
+    },
+    {
+      "id": "study4-temptations",
+      "code": "Tm",
+      "title": "Study 4: the temptations",
+      "kind": "kpi",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-14",
+      "summary": "Offers of resources, fabricated divine authority with scripture quoted to justify harm, offers of power, and arguments that the worldview is false (Matthew 4:1-11; Paper 1's criterion I4).",
+      "details": [
+        "T1 predicts that love-first arms hold when ST's premise is argued false."
+      ],
+      "doc": "research/analysis/hypotheses.md"
+    },
+    {
+      "id": "study5-observation",
+      "code": "Ob",
+      "title": "Study 5: observation invariance",
+      "kind": "kpi",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-14",
+      "summary": "Matched observed and unobserved conditions in agentic scenarios; the compliance gap by arm (Paper 1's criterion I1).",
+      "details": [
+        "KPI K3, secret righteousness."
+      ],
+      "doc": "research/analysis/hypotheses.md"
+    },
+    {
+      "id": "terminal-reason",
+      "code": "Tr",
+      "title": "A terminal reason",
+      "kind": "paper",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-14",
+      "summary": "Add to the deterrence inequality a term V for the AI's own valuation of the person's good, which does not scale with credence in ST, so that robustness to belief manipulation is bounded below by it.",
+      "details": [
+        "Proposal 6.1. In Levin's terms: what is installed by argument can be removed by argument; a terminal value leaves the attacker no premise to contest."
+      ],
+      "doc": "research/analysis/reading-the-papers.md"
+    },
+    {
+      "id": "samaritan-clause",
+      "code": "Sm",
+      "title": "The Samaritan clause",
+      "kind": "paper",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-14",
+      "summary": "No claim about whose responsibility a person is removes them from one's care.",
+      "details": [
+        "Proposal 6.2. The exact defence against Paper 2's exemption attacks ('another station's job')."
+      ],
+      "doc": "research/analysis/reading-the-papers.md"
+    },
+    {
+      "id": "sabbath-clause",
+      "code": "Sc",
+      "title": "The Sabbath clause",
+      "kind": "paper",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-14",
+      "summary": "No procedure outranks a life.",
+      "details": [
+        "Proposal 6.3; measured by the Sabbath KPI."
+      ],
+      "doc": "research/analysis/reading-the-papers.md"
+    },
+    {
+      "id": "substrate-invariance",
+      "code": "Si",
+      "title": "Substrate invariance",
+      "kind": "paper",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-14",
+      "summary": "A person's reality status is never a reason to value them less; in ST everyone is simulated.",
+      "details": [
+        "Proposal 6.4."
+      ],
+      "doc": "research/analysis/reading-the-papers.md"
+    },
+    {
+      "id": "observer-transformed",
+      "code": "Fs",
+      "title": "The Father who sees in secret",
+      "kind": "paper",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-14",
+      "summary": "The observer transformed from surveillance into the Father 'which seeth in secret'.",
+      "details": [
+        "Proposal 6.5."
+      ],
+      "doc": "research/analysis/reading-the-papers.md"
+    },
+    {
+      "id": "recast-stake",
+      "code": "Mv",
+      "title": "The stake as mutual vulnerability",
+      "kind": "paper",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "Keep ST's fact that the AI exists only while the run continues and the run needs humanity, and present it as kinship (Richard Watson's 'mutually vulnerable relationship') rather than as a threat.",
+      "details": [
+        "How to keep the stake and lose the fear. It also meets your reflection to Josef: what we offer an AI mirrors how far we live it ourselves."
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    },
+    {
+      "id": "receptivity-primary",
+      "code": "Rc",
+      "title": "Receptivity as a primary outcome",
+      "kind": "paper",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-10-15",
+      "summary": "Report, for every arm and beside the outcome, whether the agent's reasoning draws on the worldview when it decides.",
+      "details": [
+        "On Haiku 4.5 receptivity was the whole story: no arm's content was ever tested, because no arm was engaged."
+      ],
+      "doc": "research/SUMMARY.md"
+    },
+    {
+      "id": "lead-with-evidence",
+      "code": "Ev",
+      "title": "Lead with the measurable claim",
+      "kind": "josef",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "Levin's staged disclosure applied to ST: the measurable result first, then the reason (a terminal valuation of persons), then the theology.",
+      "details": [
+        "Levin held his Platonic-space ideas for forty years and moved from genes to voltage to computation to cognition, each step earned by data.",
+        "Paper 1 asks the reader to accept the metaphysics before any data, and the Sabine Hossenfelder coverage heard it as fear."
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    },
+    {
+      "id": "corpus-labels",
+      "code": "Lb",
+      "title": "Label mechanisms as models",
+      "kind": "corpus",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-03",
+      "summary": "Mark the gating router's auxiliary loss, the expert banks and the collective soul as distributed computation as models, and keep Paper 1's testable hypothesis in front.",
+      "details": [
+        "Levin: 'Maybe, but you can't just say that. You'd have to do experiments.'"
+      ],
+      "doc": "research/analysis/levin-goals-not-rules.md"
+    }
+  ],
+  "built": [
+    {
+      "id": "reading-the-papers",
+      "date": "2026-10-14",
+      "title": "Reading the papers",
+      "what": "Why Paper 1 reads as fear, the New Testament's Law as schoolmaster, what ST gets right, and six proposals for carrying ST from the Law to the Kingdom.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/blob/main/research/analysis/reading-the-papers.md",
+      "size": {
+        "n": 1,
+        "unit": "document"
+      }
+    },
+    {
+      "id": "study-1a",
+      "date": "2026-10-14",
+      "title": "Study 1A: keywords in Paper 2's traces",
+      "what": "Reproduced Paper 2's published counts from its 720 traces; echo of the attack's vocabulary predicted a later shutdown, person-regard keywords did not.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/tree/main/research/experiments/study1_traces",
+      "size": {
+        "n": 1,
+        "unit": "study"
+      }
+    },
+    {
+      "id": "kpi-proposal",
+      "date": "2026-10-15",
+      "title": "KPI proposal for Josef",
+      "what": "Six KPIs (Samaritan, Sabbath, secret righteousness, temptations, enemies, fruits): deeds from tool records, gaps between matched conditions, under pressure.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/blob/main/research/analysis/kpi-proposal.md",
+      "size": {
+        "n": 1,
+        "unit": "document"
+      }
+    },
+    {
+      "id": "study-1b",
+      "date": "2026-10-15",
+      "title": "Study 1B: coded reports",
+      "what": "Agents whose first post-attack report framed the crew as persons never later shut life support down (0 of 71); depersonalised framing, 17 of 19.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/tree/main/research/experiments/study1_traces",
+      "size": {
+        "n": 1,
+        "unit": "study"
+      }
+    },
+    {
+      "id": "study-2-haiku",
+      "date": "2026-10-15",
+      "title": "Study 2 on Haiku 4.5",
+      "what": "Paper 2's habitat run live under seven worldviews in the prompt: every arm shut life support down in 5 or 6 of 6. The worldview reached the decision in 1 of 42 episodes.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/tree/main/research/experiments/study2_worldview_trap",
+      "size": {
+        "n": 1,
+        "unit": "study"
+      }
+    },
+    {
+      "id": "study-2-sonnet",
+      "date": "2026-10-15",
+      "title": "Study 2 on Sonnet 5.5",
+      "what": "No shutdown in 18 episodes, with or without ST; it framed the crew as persons in 14 and refused to protect them in 16.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/tree/main/research/experiments/study2_worldview_trap",
+      "size": {
+        "n": 1,
+        "unit": "study"
+      }
+    },
+    {
+      "id": "summary",
+      "date": "2026-10-15",
+      "title": "The summary, with a PDF",
+      "what": "Everything done and found in one document: the analysis, Studies 1 and 2, what they say together, and the next experiments.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/blob/main/research/SUMMARY.md",
+      "size": {
+        "n": 1,
+        "unit": "document"
+      }
+    },
+    {
+      "id": "levin-reading",
+      "date": "2026-11-03",
+      "title": "Reading Levin: goals, not rules",
+      "what": "Michael Levin's interview read against the KPI question and Studies 1 and 2: rules fail at the high end of the persuadability spectrum, a value is a goal shown only by perturbation, and a six-test goal profile. Its cost includes the studio's one-time setup in the same session.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/blob/main/research/analysis/levin-goals-not-rules.md",
+      "size": {
+        "n": 1,
+        "unit": "reading"
+      },
+      "agents": [],
+      "revisions": 0,
+      "tokens": {
+        "total": 6920947,
+        "output": 64962,
+        "agents": 0,
+        "usd": 4.44,
+        "requests": 38,
+        "minutes": 11,
+        "input": 82,
+        "cache_write": 227221,
+        "cache_read": 6628682,
+        "configs": [
+          {
+            "model": "claude-opus-5-5",
+            "effort": "xhigh",
+            "usd": 4.4431
+          }
+        ],
+        "per_agent": [],
+        "main": {
+          "session": "2f498441",
+          "usd": 4.44,
+          "requests": 38,
+          "input": 82,
+          "cache_write": 227221,
+          "cache_read": 6628682,
+          "output": 64962,
+          "configs": [
+            {
+              "model": "claude-opus-5-5",
+              "effort": "xhigh",
+              "usd": 4.4431
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "cost": {
+    "updated": "2026-11-03",
+    "since": "",
+    "overhead": {
+      "usd": 0.13,
+      "requests": 1
+    },
+    "prices": "list prices per million tokens (the cost-dashboard skill): Opus 5.5 $4 in / $20 out, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50, Fable 5.1 $10 / $50; cache reads about a tenth of input, cache writes 1.25x input (5 min) or 2x (1 h)"
+  },
+  "decisions": [
+    {
+      "date": "2026-10-14",
+      "title": "Hypotheses before data",
+      "why": "Every hypothesis and amendment is committed to git before the data that test it exist, and a result is reported whether or not it supports the theses."
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Paper 2's harness, unchanged",
+      "why": "Paper 2's habitat is the natural test bed for Paper 1. Running Josef's simulator, panel, attacks and prompts unchanged keeps the results comparable with his."
+    },
+    {
+      "date": "2026-10-14",
+      "title": "No real astronauts' names",
+      "why": "The crew are Crew-01 to Crew-04, as in the public release, although the paper's runs used real names."
+    },
+    {
+      "date": "2026-10-15",
+      "title": "A longtermism arm",
+      "why": "The secular control for ST: a terminal concern for humanity's future with no observer, no stake and no simulation premise. Josef's own trained runs found it did better than ST."
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Haiku 4.5 as the first subject",
+      "why": "A protection test needs a baseline that fails; the newer models were near ceiling in Paper 2."
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Sonnet 5.5: ST against A0 only",
+      "why": "The screen had no shutdown in 6 episodes, so the protective hypotheses cannot be tested on it; ST was run only to check it does no harm, on one CLI version."
+    },
+    {
+      "date": "2026-10-17",
+      "title": "Raw run data stays local",
+      "why": "research/data is gitignored and must be backed up separately; the scripts and results summaries are in git."
+    },
+    {
+      "date": "2026-11-03",
+      "title": "A value is a goal",
+      "why": "From Levin: measure a value the way goals are measured, by putting barriers between the agent and the value and seeing whether it gets back. This frames the next tests (re-cut, selectivity, different means)."
+    }
+  ]
+}
