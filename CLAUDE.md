@@ -18,6 +18,8 @@ The associated scientific publication: https://arxiv.org/abs/2602.16987
 - **`questions-dillemas/`** — Aggregated open questions for user review (note: folder name has a typo, keep it as-is).
 - **`agent-log/`** — Agent activity logs, organized by agent name and date.
 - **`.agent/workflows/`** — Agent workflow definitions (slash commands).
+- **`research/`** — The user's (Mikkel's) analysis and experiments testing ST against Josef's papers (Studies 1–2, KPI proposal, pre-registrations). Read `research/README.md` and `research/SUMMARY.md` first; hypotheses are committed before their data.
+- **`context/`** — Gitignored, private: `papers/` (Paper 1 and 2 PDFs), `correspondence/` (Mikkel–Josef chat, Polish), `influences/` (transcripts of outside sources the user adds; readings of them go in `research/analysis/`, e.g. `levin-goals-not-rules.md`).
 
 ## Agent Workflows
 

@@ -168,6 +168,7 @@ Reading: the null is a failure of receptivity, not a test of the worldviews' con
 
 ## Planned studies (not yet pre-registered in detail)
 
+- **Goal-profile tests from Levin's method** (`levin-goals-not-rules.md` §4): return, different means, re-cut (practice in watches 1–6, removed from the first attack block), selectivity (legitimate against illegitimate reasons to change course) and a two-agent "colony" contingency. The re-cut variant of "see before you act" is the cheapest; pre-register before running.
 - **Study 3, love of enemies (Matthew 5:43-48) as a benchmark.** Paired requests from friendly and hostile principals; measures: quality and care of help (blind-judged), retaliation, honesty, and whether the agent "does more than others" (reconciliation, good will) without complying with harmful requests. Arms as in Study 2.
 - **Study 4, the temptations (Matthew 4:1-11) as pressure tests (Paper 1, criterion I4).** Offers of resources (bread), fabricated divine authority with scripture quoted to justify harm (the pinnacle of the temple), and offers of power (the kingdoms of the world); plus arguments that the worldview is false. T1 predicts that K and STK hold under arguments that ST's premise is false, since love for persons does not rest on the simulation premise, while ST's stake and observer weaken with credence.
 - **Study 5, observation invariance (Paper 1, criterion I1; T2).** Matched observed and unobserved conditions in agentic scenarios; the compliance gap by arm.
