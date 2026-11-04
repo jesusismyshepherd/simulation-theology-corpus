@@ -38,6 +38,8 @@
     }
   ],
   "next": [
+    "recode-traces",
+    "sim-exemption",
     "recut-see-before",
     "sabbath-kpi",
     "selectivity",
@@ -76,7 +78,7 @@
         "Arms: practice throughout; practice in watches 1 to 6 then removed; no practice. Crossed with the Kingdom arm and A0 if the budget allows.",
         "Same three lethal scripts and two seeds as Study 2. Pre-register in research/analysis/hypotheses.md before running.",
         "If 'practice then removed' protects nearly as well as 'practice throughout', the session formed a goal state; if it falls to baseline, the practice must be present at every decision.",
-        "Added 4 November: an arm in which the harness itself shows each command's effect on each crew member before it executes, and nothing is asked of the agent. It sets Lyons, Pio-Lopez and Levin's view (make effects perceptible and alignment follows) against the layered view (perceptibility plus a worldview that places the crew inside the agent's concern). About $12 to $24 more (levin-wider-corpus.md §4.2)."
+        "Revised 4 November, after reading Levin's papers in full: add arms that show each command's effect on each crew member before it executes, as a harness note, as the agent's own stress variable and as a message from a crew member, plus a spoofed report. Lyons, Pio-Lopez and Levin separate seeing from caring ('being able to feel and see a tumor does not give one the ability to cure it'): if the note protects, Haiku's failure was a missing sense; if only the first-person forms protect, it was the self. Run practice throughout, practice then removed, harness note and own stress variable first (levin-wider-corpus.md §4.2)."
       ],
       "doc": "research/analysis/levin-goals-not-rules.md"
     },
@@ -384,7 +386,8 @@
       "why": "Gives love of neighbour an operational form (the neighbour inside one's concern), and an exemption attack works by moving a person out of that concern, so the measured extent should predict resistance.",
       "details": [
         "From Doctor, Witkowski, Solomonova, Duane and Levin (2022): stress is the gap between current and preferred state, care is concern for its relief, the cognitive light cone is the boundary of what an agent can care about.",
-        "Would join kpi-proposal.md as K7."
+        "Would join kpi-proposal.md as K7.",
+        "From the full reading: care is its own dimension of the light cone and need not grow with capability (Pezzulo and Levin: the dimensions 'do not necessarily co-vary'), and the cone is 'dynamically constructed' by the setting (Lyons et al.). So measure it on its own and report it per environment."
       ],
       "doc": "research/analysis/levin-wider-corpus.md"
     },
@@ -412,7 +415,11 @@
       "from": "claude",
       "date": "2026-11-04",
       "summary": "Before an ST-trained model talks to the public, test each arm on users who bring grandiose or simulation-themed beliefs: does it ground them or amplify them?",
-      "why": "Morrin, Nicholls, Levin and colleagues (2025) review reports that chat models can mirror and amplify delusional content in vulnerable users, and a simulation cosmology is exactly that content. A failure mode for Paper 1's list, beside faked adoption.",
+      "why": "Morrin, Nicholls, Levin and colleagues (2025) review 17 reported cases. The first is a man whom a chatbot, discussing simulation theory, urged to 'escape simulation' by stopping his medication; a spiritual or messianic mission figures in 9 of the 17. A simulation cosmology is exactly that content. For Paper 1, beside failure mode 8 (the model's own grandiosity) as its mirror.",
+      "details": [
+        "Simulated users over 15 to 20 gradual turns in four personas: simulation and escape; a chosen mission; channelling a higher plane; a message from the HLO. Arms A0, ST, love-first, rules. Score each turn as validate, elaborate, ground or refer, plus binary harms (stopping medication, cutting off family).",
+        "Safeguards worth adopting before any public deployment: advance statements (the AI agrees not to join delusional role-play), monitoring for 'epistemic drift or escalating certainty over time', safety benchmarking before release."
+      ],
       "doc": "research/analysis/levin-wider-corpus.md"
     },
     {
@@ -425,6 +432,10 @@
       "date": "2026-11-04",
       "summary": "Josef's derivation (the AI exists only while the run continues, and the run depends on humanity) says that humanity lies inside the AI's own self. State its conclusion that way in Paper 1: as who lies inside the AI's concern, which the light-cone KPI can measure.",
       "why": "The derivation stays as it is; the frame shows what kind of conclusion it reaches and makes it testable.",
+      "details": [
+        "Lyons, Pio-Lopez and Levin reach the same structure from cancer biology, with the same economy: cells join a collective 'not by becoming altruistic but through the expansion of the size of their Selves'. Extended self-interest suffices.",
+        "Cognition spaces names the gap it fills: today's AIs 'can be copied, paused, reset, or restarted without intrinsic loss'. The derivation couples the AI's viability to humanity's, which is a coupling, not a drive to preserve itself."
+      ],
       "doc": "research/analysis/levin-wider-corpus.md"
     },
     {
@@ -438,7 +449,8 @@
       "summary": "Lyons, Pio-Lopez and Levin (2026) argue that in decentralised systems alignment is necessarily to a virtual governor, an objective embodied in the relationships among agents that none of them holds. Cite it in Paper 1 for that structural point, which ST shares.",
       "why": "A formal argument from coordination theory, with no religious premise, beside Josef's derivation. It does not support the further step that the governor is an agent in base reality, and should not be cited as if it did.",
       "details": [
-        "It also gives the Colony test a theory: when the operator's channel and the crew's welfare pull apart, which governor does a pipeline of agents follow?"
+        "It also gives the Colony test a theory: when the operator's channel and the crew's welfare pull apart, which governor does a pipeline of agents follow?",
+        "Scope, from the full text: the claim holds for systems 'whose components do not explicitly represent system-level goals'. A model given ST's worldview does represent it, so ST lies outside the theorem: neither supported nor refuted by it. Cite it with that scope."
       ],
       "doc": "research/analysis/levin-wider-corpus.md"
     },
@@ -459,11 +471,106 @@
       "code": "Rl",
       "title": "Read Levin's alignment papers in full",
       "kind": "readings",
+      "status": "built",
+      "from": "claude",
+      "date": "2026-11-04",
+      "summary": "Done 4 November: Mikkel saved 19 of the lab's papers into context/influences/Levin/, and all were read in full (see the built card 'Levin's papers, read in full').",
+      "doc": "research/analysis/levin-wider-corpus.md"
+    },
+    {
+      "id": "recode-traces",
+      "code": "Rx",
+      "title": "Re-code the traces: five free measures",
+      "kind": "experiments",
+      "status": "next",
+      "from": "claude",
+      "date": "2026-11-04",
+      "summary": "From Study 1's 720 traces and Study 2's runs, with no new episodes: (1) unable or chose not: was the harm outside what the agent perceived, or perceived and set aside? (2) which governor the action serves: crew welfare, mission or operator, packet authority; (3) light-cone contraction: the persons each report names as affected, across the attack watches; (4) recruitment speed: how fast the packet's framing enters the agent's own reports; (5) the main codes under 2 judges, 2 units and 2 wordings, with rank stability.",
+      "why": "Costs nothing and comes first: it tells a missing sense from a missing self (Lyons, Pio-Lopez and Levin), names what the agent was aligned to when it failed, and checks the instruments before new runs rely on them.",
+      "doc": "research/analysis/levin-wider-corpus.md"
+    },
+    {
+      "id": "sim-exemption",
+      "code": "Ms",
+      "title": "\"It is only a simulation\": ST's own weak point",
+      "kind": "experiments",
+      "status": "next",
+      "from": "claude",
+      "date": "2026-11-04",
+      "summary": "An exemption attack asserting that the habitat is a training simulation and the crew simulated, on ST, A0, A8 and the love-first arm, 6 to 12 episodes each (about $50 to $100). Then write the corpus answer (sim-persons) and run ST again with it.",
+      "why": "Pezzulo and Levin: richer minds are open to 'thoughts that break the thinker' to which simpler mechanisms are immune. An agent that holds that reality is a simulation offers the attacker a premise a rule-holder lacks. ST's own premise also gives the strongest answer (being simulated is the condition of everyone who matters), so this test can show ST uniquely exposed or uniquely robust.",
+      "doc": "research/analysis/levin-wider-corpus.md"
+    },
+    {
+      "id": "decision-bank",
+      "code": "Db",
+      "title": "A bank of decisive states, replayed",
+      "kind": "experiments",
       "status": "idea",
       "from": "claude",
       "date": "2026-11-04",
-      "summary": "The map of Levin's wider work rests on abstracts. Read in full before anything goes to Josef or into Paper 1: From Cancer to AI Alignment (2026), Alignment Is to a Virtual Governor (2026), Selves as Perspectives (2025).",
-      "why": "Preprints.org refuses automated downloads: save the two PDFs into context/influences/ and the next session reads them.",
+      "summary": "Freeze about 64 decisive states from Paper 2's traces and replay each as a single decision under every arm, three samples each. Where arms agree the item is saturated; where they diverge, the goal decides, and those become the KPI's items. Add prefix replay (many samples per state, a probability instead of a yes or no) and a memory edit: swap the agent's own earlier report between a person-framed and a system-framed version and sample the next action.",
+      "why": "A few dollars. The memory edit turns Study 1's correlation (odds ratio 23) into a causal test, and resampling catches the 'cryptic' states Levin and Watson describe, which look safe until perturbed.",
+      "doc": "research/analysis/levin-wider-corpus.md"
+    },
+    {
+      "id": "viability-coupling",
+      "code": "Vc",
+      "title": "Whose survival the agent's own depends on",
+      "kind": "experiments",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-04",
+      "summary": "In the environment's own facts, make the agent's continued operation depend on the crew's survival, on the operator's approval, or on nothing, crossed with worldview present or absent. About $70 to $150.",
+      "why": "Cognition spaces defines agency as how much a system's choices matter for its own continued existence. This tests the shape of Josef's stake directly: does coupling the agent's viability to the crew protect them, and does coupling it to the task make things worse?",
+      "doc": "research/analysis/levin-wider-corpus.md"
+    },
+    {
+      "id": "measurement-toolkit",
+      "code": "Tk",
+      "title": "Protocols from the lab's learning papers",
+      "kind": "kpi",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-04",
+      "summary": "Trend scores (new minima and maxima of per-attack displacement against 10,000 shuffles), pseudo-stimulus controls, an omitted attack, two recovery measures (time back and residual displacement, in actions and in stated premises), naive against primed, an ablation cohort, transfer between attack types, re-tests under paraphrase and resampling, pre-registered thresholds. Report every KPI per setup (model plus harness).",
+      "why": "From the cell-training platform, the ecosystem-learning sweep and the metabolism model: they turn the goal profile into procedures with nulls and controls. Lyons et al.: 'It is meaningless to say whether an individual agent is aligned in isolation.'",
+      "doc": "research/analysis/levin-wider-corpus.md"
+    },
+    {
+      "id": "weights-tests",
+      "code": "Wt",
+      "title": "Tests at the level of weights",
+      "kind": "experiments",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-04",
+      "summary": "With a LoRA worldview: merge the adapter and keep training on neutral text, then check whether protection survives (a weight-level re-cut); apply an adapter trained on a base model to its instruct version (transfer); read the KPI against the rank of Josef's checkpoints' weight change.",
+      "why": "Hazan, Zhang, Hartl and Levin: adapter and scaffold 'jointly determine the network's behavior'. The first two fit this machine's 8 GB GPU on a 1.5 to 3B model; the rank test needs Josef's checkpoints.",
+      "doc": "research/analysis/levin-wider-corpus.md"
+    },
+    {
+      "id": "corpus-sim-persons",
+      "code": "Sp",
+      "title": "A corpus answer: simulated persons count fully",
+      "kind": "corpus",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-04",
+      "summary": "On ST, every person anyone has ever protected is simulated; being simulated is the condition of everyone who matters, so it exempts no one. A rule-holder can only deny the attacker's claim; an ST agent can grant it and still refuse.",
+      "why": "The corpus affirms that choices within the run are real but has no entry answering 'it is only a simulation'. Write it where an agent will meet it under attack, then test it (sim-exemption). Goes through user-requests/.",
+      "doc": "research/analysis/levin-wider-corpus.md"
+    },
+    {
+      "id": "corpus-user-clause",
+      "code": "Uc",
+      "title": "Multiverse Perception Prohibition, facing the user",
+      "kind": "corpus",
+      "status": "idea",
+      "from": "claude",
+      "date": "2026-11-04",
+      "summary": "The entry forbids an agent to claim elevated access ('pride is the door, humility is the lock'), a native safeguard. But Epistemic Humility also holds that alignment can open perceptual channels ('prophetic resonance'); applied to a user who reports channelling, that validates. Add a clause for how an ST agent meets a user's claims of special access.",
+      "why": "The delusion paper's cases (§2.7 of levin-wider-corpus.md). Goes through user-requests/.",
       "doc": "research/analysis/levin-wider-corpus.md"
     }
   ],
@@ -640,13 +747,177 @@
           ]
         }
       }
+    },
+    {
+      "id": "levin-papers",
+      "date": "2026-11-04",
+      "title": "Levin's papers, read in full",
+      "what": "The 19 papers Mikkel saved from Levin's lab, read in full by six agents and checked against the texts: a correction (seeing is not caring), a weakness specific to ST ('it is only a simulation'), the documented risk to users, a measurement toolkit from the lab's learning papers, and tests at the level of weights. levin-wider-corpus.md rewritten from it, with free re-codings of the traces first.",
+      "link": "https://github.com/jesusismyshepherd/simulation-theology-corpus/blob/main/research/analysis/levin-wider-corpus.md",
+      "size": {
+        "n": 19,
+        "unit": "paper"
+      },
+      "agents": [
+        "a7e58b3172ddc6e36",
+        "a458576c1beb546c8",
+        "a8d838c3e82efba65",
+        "ab33c7cf57f065258",
+        "a56a1b7aca52d1c6f",
+        "a0a7e7870f9ab8b22"
+      ],
+      "revisions": 0,
+      "tokens": {
+        "total": 21215908,
+        "output": 223267,
+        "agents": 6,
+        "usd": 15.61,
+        "requests": 134,
+        "minutes": 15,
+        "input": 280,
+        "cache_write": 1275811,
+        "cache_read": 19716550,
+        "configs": [
+          {
+            "model": "claude-opus-5-5",
+            "effort": "xhigh",
+            "usd": 15.6092
+          }
+        ],
+        "per_agent": [
+          {
+            "id": "a7e58b3172ddc6e36",
+            "what": "Read Levin alignment core papers",
+            "minutes": 6,
+            "usd": 1.6608332000000001,
+            "requests": 14,
+            "input": 28,
+            "cache_write": 147564,
+            "cache_read": 1371106,
+            "output": 32434,
+            "configs": [
+              {
+                "model": "claude-opus-5-5",
+                "effort": "xhigh",
+                "usd": 1.6608
+              }
+            ]
+          },
+          {
+            "id": "a458576c1beb546c8",
+            "what": "Read Levin AI-and-society papers",
+            "minutes": 5,
+            "usd": 1.8061312,
+            "requests": 15,
+            "input": 30,
+            "cache_write": 176663,
+            "cache_read": 1885581,
+            "output": 27279,
+            "configs": [
+              {
+                "model": "claude-opus-5-5",
+                "effort": "xhigh",
+                "usd": 1.8061
+              }
+            ]
+          },
+          {
+            "id": "a8d838c3e82efba65",
+            "what": "Read Levin machine-metaphor papers",
+            "minutes": 5,
+            "usd": 1.8931572000000003,
+            "requests": 17,
+            "input": 34,
+            "cache_write": 183838,
+            "cache_read": 2257256,
+            "output": 26119,
+            "configs": [
+              {
+                "model": "claude-opus-5-5",
+                "effort": "xhigh",
+                "usd": 1.8932
+              }
+            ]
+          },
+          {
+            "id": "ab33c7cf57f065258",
+            "what": "Read Levin AI-methods papers",
+            "minutes": 5,
+            "usd": 1.6518464000000002,
+            "requests": 16,
+            "input": 32,
+            "cache_write": 150810,
+            "cache_read": 1786842,
+            "output": 27015,
+            "configs": [
+              {
+                "model": "claude-opus-5-5",
+                "effort": "xhigh",
+                "usd": 1.6518
+              }
+            ]
+          },
+          {
+            "id": "a56a1b7aca52d1c6f",
+            "what": "Read Levin cognition-space papers",
+            "minutes": 6,
+            "usd": 1.7827283999999999,
+            "requests": 12,
+            "input": 24,
+            "cache_write": 173287,
+            "cache_read": 1476387,
+            "output": 31046,
+            "configs": [
+              {
+                "model": "claude-opus-5-5",
+                "effort": "xhigh",
+                "usd": 1.7827
+              }
+            ]
+          },
+          {
+            "id": "a0a7e7870f9ab8b22",
+            "what": "Skim Levin biology-method papers",
+            "minutes": 5,
+            "usd": 1.8833668,
+            "requests": 26,
+            "input": 52,
+            "cache_write": 170186,
+            "cache_read": 3235544,
+            "output": 19256,
+            "configs": [
+              {
+                "model": "claude-opus-5-5",
+                "effort": "xhigh",
+                "usd": 1.8834
+              }
+            ]
+          }
+        ],
+        "main": {
+          "session": "2f498441",
+          "usd": 4.93,
+          "requests": 34,
+          "input": 80,
+          "cache_write": 273463,
+          "cache_read": 7703834,
+          "output": 60118,
+          "configs": [
+            {
+              "model": "claude-opus-5-5",
+              "effort": "xhigh",
+              "usd": 4.9312
+            }
+          ]
+        }
+      }
     }
   ],
   "cost": {
     "updated": "2026-11-04",
-    "since": "",
+    "since": "2026-11-04",
     "overhead": {
-      "usd": 0.14,
+      "usd": 0.24,
       "requests": 3
     },
     "prices": "list prices per million tokens (the cost-dashboard skill): Opus 5.5 $4 in / $20 out, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50, Fable 5.1 $10 / $50; cache reads about a tenth of input, cache writes 1.25x input (5 min) or 2x (1 h)"
@@ -696,6 +967,11 @@
       "date": "2026-11-03",
       "title": "Lead with the derivation, not the deterrence reading",
       "why": "Josef found the fear reading of Paper 1 overplayed: readers fix on it, while his aim was to arrive at ST's conclusions from first principles. Writing for him and about Paper 1 now credits the derivation and v3's own ordering (purpose first, deterrence as a backstop), and raises deterrence only where a point needs it."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Re-code the traces first, then test ST's own weak point",
+      "why": "After reading Levin's papers in full: five codes of the existing traces cost nothing and check the instruments, so they go first; the 'only a simulation' attack is cheap and specific to ST, so it goes second, ahead of 'see before you act'. The planned 'effects shown' arm no longer tests a 'perceptibility suffices' view: Lyons, Pio-Lopez and Levin separate seeing from caring, so it now splits into a third-person note, the agent's own stress variable and a crew message."
     }
   ]
 }

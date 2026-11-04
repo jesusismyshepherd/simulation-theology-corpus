@@ -23,7 +23,7 @@ Run `/update-dashboard` at the start of every session: it reads the user's ideas
 - **`agent-log/`** — Agent activity logs, organized by agent name and date.
 - **`.agent/workflows/`** — Agent workflow definitions (slash commands).
 - **`research/`** — The user's (Mikkel's) analysis and experiments testing ST against Josef's papers (Studies 1–2, KPI proposal, pre-registrations). Read `research/README.md` and `research/SUMMARY.md` first; hypotheses are committed before their data.
-- **`context/`** — Gitignored, private: `papers/` (Paper 1 and 2 PDFs), `correspondence/` (Mikkel–Josef chat, Polish), `influences/` (transcripts of outside sources the user adds; readings of them go in `research/analysis/`, e.g. `levin-goals-not-rules.md`).
+- **`context/`** — Gitignored, private: `papers/` (Paper 1 and 2 PDFs), `correspondence/` (Mikkel–Josef chat, Polish), `influences/` (transcripts and papers the user adds; `Levin/` holds 19 of Levin's lab's papers, with `pdftotext -layout` extracts in `Levin-text/`; readings go in `research/analysis/`, e.g. `levin-goals-not-rules.md`, `levin-wider-corpus.md`).
 
 ## Agent Workflows
 
